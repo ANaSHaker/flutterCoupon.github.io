@@ -1,0 +1,272 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coupon app built by flutter</title>
+    <link rel="shortcut icon" href="icon.png">
+
+    <meta name="description" content="Coupon app built by flutter">
+    <meta name="author" content="Mahmoud Shaker">
+
+    <link rel="stylesheet" href="style.css?">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
+    
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+
+        <div id="main">
+                        <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button> </div>
+        
+        <span href="#" id="farag" ><img class="logo" style="width: 100%;" src="icon.png"></span>
+        
+        <div class="row content">
+                    <a class="right" style="float: right; margin-top:10px;" href="mailto:yourapp@email.com" target="_blank"><i class="fas fa-paper-plane"></i>&nbsp; gustblack36@gmail.com</a>
+                </div>
+        
+        
+        </div>
+
+    </div>
+
+    <div class="container clear">
+        <div class="row wrapper">
+
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a class="title" href="#">Introduction</a>
+                
+                <a class="section" href="#">Supported Versions</a>
+                <a class="section" href="#">About this App</a>
+                <a class="section" href="#technology">Technology</a>
+
+                <div class="divider left"></div>
+
+                <a class="title" href="#gettingstarted">Getting Started</a>
+
+                <a class="section" href="#Part 1">Set the app</a>
+                <a class="section" href="#Part 3">onBoarding screen</a>
+                 <a class="section" href="#Part 2">About us screen</a>
+                 <a class="section" href="#Part 4">Home screen</a>
+
+                <div class="divider left"></div>
+
+                <a class="title" href="#basicfeatures">Android Setup</a>
+
+                <a class="section" href="#feature1">Change Package name</a>
+                <a class="section" href="#feature2">Setup Firebase</a>
+                <a class="section" href="#feature3">active Storage,messaging & cloud firestore</a>
+                <a class="section" href="#feature4">one Signal</a>
+                <a class="section" href="#feature5">Admob</a>
+
+                <div class="divider left"></div>
+
+                <a class="title" href="#advanced">Ios Setup</a>
+
+                <a class="section" href="#featurea">Change Package name</a>
+                <a class="section" href="#featureb">Setup Firebase</a>
+                           <div class="divider left"></div>
+                 <a class="section" href="#Part 5">Release apk $ ipa</a>
+
+              </div>
+              
+            
+
+            <div class="right-col">
+            
+
+
+                <h1 >Introduction</h1>
+                
+                <p>Welcome to Coupon app documnation we will help you here to setup your data in the app from begining to release 
+                 the app made by flutter if you didnot have it in your pc you cant see the documntation for installing it from here
+                  <a href="https://flutter.dev/docs/get-started/install?gclid=CjwKCAjwnK36BRBVEiwAsMT8WDNf-bdUQn6JlotbkU-HNVhKEu1PKJN7N0MsC8mHD_DFWZKMZhY8AhoCuUgQAvD_BwE&gclsrc=aw.ds">
+                      install flutter 
+                  </a></p> 
+            
+                <h2>Supported Versions:</h2>
+             
+                <p><b>App Version 1.0.0.</b> This is the first version of our app and we promise you to release new versions soon
+                with more updates</p>
+
+                <h2>About this App</h2>
+                
+                <p id="technology">This application is made to publish offers or discounts for restaurants, stores, companies, courses, or anything you want You can publish it simply from the application's control panel</p>
+
+                <h2>Technology</h2>
+                
+                <p>This app is built with Flutter , Dart , Firebase , Sqlite, Provider<br>
+
+                 
+
+                <h1>Getting Started</h1>
+
+                 <p id="Part 1"><h2>Set the app </h2></p>
+
+                <h2>Change Name & icon </h2>
+                
+                <p>First you should change the name of your app you can change it from <span class="special">/android/app/src/main/AndroidManifest.xml</span> you can change you app name you will find thd old name inside it </p>
+
+                    <p> you can change icon from assets file in project folder you will find picture named  
+                        <span class="special">icon.png</span></p>
+                
+                
+                
+                <p>1- you will set the default theme of the app in our app there is two themes you can choose one of them
+                 <br> go to <span class="special">main.dart   line 88</span> <br> and choose the default theme (light /dark)</p>
+                 <p>2- you can change main color for light mode , <br>you will in <span class="special">lib/widgets/constants.dart</span> <br> there is a var color called <strong>LightPrimaryColor</strong></p>
+                 <p>3- there are a constant colors for  splash , login , signup and onboarding screens you can change this colors from
+                    <br><span class="special">lib/widgets/constants.dart</span></p>
+                
+                  <p>4- you should choose the default language for the app you can choose (Arabic / English ) <br>
+                    go to <span class="special">lib/localization/app_localization.dart</span> <br>
+                  and in the line 8 and line 14  choose (en / hi )</p>
+                
+   <p id="Part 3"><h2>OnBoarding screens</h2></p>
+                <p>Now we will change the onBoarding screens , they are this 3 screens which display when you install the app for first time</p>
+                <p>1-in this screens there are 3 photos in the top of every one you can change it by opening
+                    <br><strong>assets</strong>folder in project and inside it there is a photo name of it is <strong>1.png , 2.png and 3.png</strong>  just change it with the photos you want </p>
+
+                    <p>2-Also in this screens there are text you can change it with your text from<span class="special">lib/constants.dart</span> <br> you will find the Strings constants of these text you can put your text there</p>
+
+                
+
+            
+                <p id="Part 2"><h2>About us screen</h2></p>
+                <p>1- in about us screen there are 6 buttons 4 of them have a text you can change this text by opening 
+                    <br><strong>lin118</strong>folder in project and inside it there are 2 files when you opening them you will find the text which we used you can change it with the text you want .</p>
+                    <p>2- Also in the same screen there is photo in the top of it you can change it by opening
+                    <br><strong>assets</strong>folder in project and inside it there is a photo name of it is <strong>couProfile.jpg</strong>  just change it with the photo you want </p>
+
+
+                <p id="Part 4"><h2>Home screen</h2></p>
+                <p>Now we will start in edit home screen with your data <br>
+                 1- open the project files and then open<span class="special">lib/widgets/carousel.dart</span> and replace the photos in slide with yours and if you want to add local images just relace make it AssetImage </p>
+                 <p>2- below the slide there is a horizontal list of catagories you can change colors of them by going to <br>
+                  <span class="special">lib/constants.dart</span> and replace the colors from there</p>
+
+
+             
+                    
+            <div class="divider" style="width:24%; margin:30px 0;"></div>
+            
+            
+                 <p id="basicfeatures"><h1>Android Setup</h1> </p>
+
+                <h2>Change Package name</h2>
+                
+                <p id="feature1">First you should change your app package name by using this line in terminal of project <span class="special">flutter pub run change_app_package_name:main com.new.package.name</span> <br>
+                  just change  com.new.package.name with your package name
+                </p>
+                                 <br id="feature2">
+
+                <h2>Setup Firebase</h2>
+                
+                <p>
+               Now go to <a href="www.firebase.com">Firebase</a> and build a project and take you googleServices.json file to 
+               <span class="special">android/app/</span>
+              
+                </p>
+                                                 <br id="feature3">
+
+                <h2>active Storage,messaging & cloud firestore</h2>
+                
+                <p>
+                 Now open your firebase project and active from it cloud firestore and storage to store data in it
+                
+                  </p>
+                
+                                                                 <br id="feature4">
+
+                <h2>OneSignal</h2>
+                
+                <p>
+                Now go to <a href="https://app.onesignal.com/">onesignal</a> and build a project and this is documnation for it <a href="https://documentation.onesignal.com/docs/flutter-sdk-setup">documentation</a> <br> and don't forget to change your app id 
+                you will find app id in 
+               <span class="special">lib/constants.dart</span>
+                </p>
+                
+        
+                
+               <h2>Admob</h2>
+              <br id="feature5">
+
+                 
+               <p>
+               Now go to <a href="https://admob.google.com/home/">admob</a> and build a project and get your ads id
+               <br> and don't forget to change your app id 
+                you will find app id in 
+               <span class="special">lib/constants.dart</span> & <span class="special">AndrodMainfiest</span> 
+               <br>
+               and other ads id in <span class="special">lib/constants.dart</span>
+                 </p>
+                
+                <div class="divider" style="width:24%; margin:30px 0;"></div>
+                                <br id="advanced">
+
+                <h1>Ios Setup</h1>
+                                <br id="featurea">
+
+                <h2>change Package name</h2>
+                
+                <p>you can change your package name and app name from <span class="special">ios/info.plist</span>
+                you will find appbundle id and name there </p>
+                   
+                                <br id="featureb">
+
+                <h2>Setup Firebase</h2>
+                
+                 <p>
+               Now go to <a href="www.firebase.com">Firebase</a> and build a project and take you googleServices.json file to 
+               <span class="special">android/app/</span>
+              
+                </p>
+         
+                                                <br id="part 5">
+                    <p>
+                      Now we finish in edit your app you can now build your apk and publish it to stores if you need any help or face any problem you can contact us in our email <br>
+                      <span class="special">gustblack36@gmail.com</span>
+                      <br>
+                    </p>
+
+
+                <div class="doublespace"></div>
+                <div class="divider" style="width:24%; margin:30px 0;"></div>
+                
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+          }
+          </script>
+    </script>
+
+</body>
+
+</html>

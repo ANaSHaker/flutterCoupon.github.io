@@ -1,0 +1,587 @@
+.special
+{
+    font-weight: bolder;
+    color: #333;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.2px;
+    color: #333;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Noto Serif', serif;
+    font-size: 39px;
+    line-height: 42px;
+    margin-bottom: 50px;
+
+}
+
+h2 {
+    font-family: 'Noto Serif', serif;
+    font-size: 28px;
+    line-height: 30px;
+    text-align: center;
+    color: #333;
+    margin-block-start: 40px;
+    margin-block-end: 30px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #0098f1;
+    color: #333;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    text-align: right;
+    padding: 12px 0 0 0;
+    z-index: 1;
+}
+
+.navbar a {
+    margin-right: 40px;
+    color: #333;
+}
+
+.navbar a:active {
+    text-decoration: underline;
+}
+
+.right a {
+    float: right;
+}
+
+.container {
+    width: 100%;
+}
+
+.top {
+    background-color: #0098f1;
+    height: 650px;
+}
+
+.clear {
+    background-color: #fff;
+    height: auto;
+}
+
+.nav-top {
+    border-top: 8px solid #0098f1;
+}
+
+.row {
+    max-width: 63rem;
+    margin: auto;
+    display: inline;
+}
+
+.content {
+    padding: 22px;
+}
+
+.wrapper {
+    display: flex;
+    padding: 70px;
+}
+
+.sidepanel {
+    width: 200px;
+    margin-top: -16px;
+    background-color: #fff;
+    height: 80%;
+
+}
+
+.sidepanel a.title {
+    font-family: 'Noto Serif', serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding-bottom: 12px;
+}
+
+.sidepanel a.section {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    line-height: 30px;
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+.sidepanel a.sub-section {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    line-height: 25px;
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding-left: 20px;
+
+}
+
+.sidepanel a.title:hover,
+.sidepanel a.section:hover,
+.sidepanel a.sub-section:hover {
+    text-decoration: underline;
+}
+
+.main-col {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.main-col p {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 36px;
+}
+
+.right-col {
+    margin-top: 20px;
+    text-align: left;
+    width: 100%;
+    margin-left: 0px;
+}
+
+.right-col h1 {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 24px;
+}
+
+.right-col h2 {
+    font-size: 21px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    text-align: left;
+    margin-block-start: 20px;
+    margin-block-end: 10px;
+}
+
+.right-col p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 36px;
+}
+
+.right-col a {
+    color: #0098f1;
+    text-decoration: underline;
+}
+
+.right-col ol {
+    margin-block-start: 10px;
+}
+
+.logo {
+    width: 60px;
+    display: inline;
+}
+
+.col {
+    width: 50%;
+    float: left;
+}
+
+.top-info {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    text-align: center;
+
+}
+
+.divider {
+    width: 40px;
+    height: 4px;
+    background: #0098f1;
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.left {
+    margin: 20px 0;
+}
+
+
+.footer {
+    float: left;
+    width: 100%;
+    padding: 90px 0 20px;
+    font-size: 15px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.footer a {
+    color: #333;
+}
+
+.resp-break {
+    display: none;
+}
+
+.break {
+    display: block;
+}
+
+.space {
+    height: 30px;
+    width: 100%;
+    float: left;
+}
+
+.double {
+    height: 60px;
+}
+
+.links {
+    float: left;
+    padding-bottom: 8px;
+}
+
+
+
+/* Break Points */
+
+
+/* Extra small-small devices (phones, 420px and down) */
+@media only screen and (max-width: 420px) {
+
+    .logo {
+        width: 100px;
+    }
+
+    .navbar {
+        height: auto;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .links {
+        float: none;
+    }
+
+}
+
+
+
+/* Extra small devices (phones, 650px and down) */
+@media only screen and (max-width: 650px) {
+
+    .logo {
+        width: 30%;
+        margin:14px 0px 16px 15%;
+    }
+
+    .navbar a {
+        padding-bottom: 5px;
+        margin-left: 40px;
+        margin-right: 0;
+    }
+
+    .resp-break {
+        display: block;
+        margin: 17px;
+    }
+
+    .main-col {
+        width: 100%;
+    }
+
+
+    .wrapper {
+        display: block;
+    }
+
+    .sidepanel {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        height: auto;
+    }
+
+    .sidepanel a.title,
+    .sidepanel a.section,
+    .sidepanel a.sub-section {
+        text-align: center;
+    }
+
+    .left {
+        margin: 20px auto;
+    }
+
+    .right-col {
+        position: relative;
+        margin-top: 60px;
+        margin-left: 5px;
+
+    }
+
+    #farag
+    {
+        margin-left: 11% !important;
+        width: 100px;
+    }
+
+
+    .topnav a {
+        width: 180px;
+        margin-top: -5px !important;
+    }
+
+    .topnav{
+        height: 100px;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 650px and up) */
+@media only screen and (min-width: 650px) {
+
+    .logo {
+        margin: -4% 00px 0px 3% ;
+
+    }
+
+    .right a {
+        float: right;
+        padding-bottom: 5px;
+    }
+
+}
+
+
+@media screen and (max-width: 900px) and (min-width: 651px) {
+
+
+    #farag
+    {
+        margin-left: 22% !important;
+        width: 100px;
+    }
+
+
+    .topnav a {
+        width: 180px;
+        margin-top: -5px !important;
+        margin-right: 10px;
+    }
+
+}
+
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+.logo {
+    margin: 5% 0px 0px 3%;
+}
+
+
+}
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .logo {
+        margin: -2% 0px 0px 17%;
+    }
+    }
+
+
+
+
+/* End Break Points */
+
+
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #29B6F6;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+        top: 45px;
+    left: 48px;
+    cursor: pointer;
+    background-color: #2196f3;
+    color: #ddd;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+
+  }
+  
+  .openbtn:hover {
+    background-color: #ddd;
+    color: black;
+    outline: none;
+  }
+  
+  #main {
+    display: inline;
+    float: left;
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+
+
+  .topnav {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    background-color: #03a9f4;
+    z-index: 1;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  #farag 
+  {
+    margin-left: 35%; padding: 0; color: #03a9f4;; margin-top:7px;
+    float: left;
+    background-color:#03a9f4;
+    color: #03a9f4;
+    width: 70px;
+  }
+  
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #039be5; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1976d2; 
+  }
